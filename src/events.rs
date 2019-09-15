@@ -280,14 +280,6 @@ pub enum Event {
         thread_ts: Option<String>,
         title: Option<String>,
     },
-    /// Represents a mention to a bot user
-    AppMention {
-        user : String,
-        text : String,
-        ts : String,
-        channel : String,
-        event_ts : String
-    },
 }
 
 /// Represents a confirmation of a message sent

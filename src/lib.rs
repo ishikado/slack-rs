@@ -294,7 +294,7 @@ impl RtmClient {
 impl Event {
     /// Try to deserialize an `Event` from a json-encoded `&str`
     fn from_json(s: &str) -> Result<Event, Error> {
-        println!("output log : {}", s);
+        // println!("output log : {}", s);
         match serde_json::from_str::<Event>(s) {
             Ok(ev) => Ok(ev),
             Err(e) => {
